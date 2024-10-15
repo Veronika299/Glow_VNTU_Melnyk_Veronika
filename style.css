@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-right: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Додано для зручності натискання */
+    transition: background-color 0.3s ease; /* Плавна зміна кольору фону */
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #007bff; /* Зміна кольору фону при наведенні та натисканні */
+    color: white; /* Зміна кольору тексту */
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Прибрано маркери списку */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Відстань між продуктами */
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px; /* Ширина продукту */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Ефект підняття при наведенні */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e74c3c; /* Червоний колір для ціни */
+}
+
+.discount {
+    display: inline-block;
+    background-color: #f39c12; /* Помаранчевий для знижки */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.order-button {
+    background-color: #3498db; /* Синій для кнопки */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.order-button:hover {    
+    background-color: #2980b9; 
+}  
